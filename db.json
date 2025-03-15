@@ -1,0 +1,89 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "slug": "super-mechs",
+      "imageSrc": "/assets/img/Thumbnail-1.png",
+      "title": "Super Mechs",
+      "platform": "Mobile",
+      "description": "Super Mechs is a strategic combat game where you build and fight robots!",
+      "category": "Action",
+      "topups": [
+        {
+          "amountGold": 125,
+          "price": 3250000
+        },
+        {
+          "amountGold": 225,
+          "price": 5500000
+        },
+        {
+          "amountGold": 350,
+          "price": 7500000
+        },
+        {
+          "amountGold": 550,
+          "price": 10000000
+        },
+        {
+          "amountGold": 750,
+          "price": 12500000
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "call-of-duty-modern",
+      "imageSrc": "/assets/img/Thumbnail-2.png",
+      "title": "Call of Duty: Modern",
+      "platform": "Mobile",
+      "description": "A legendary shooter game featuring fast-paced action and strategy.",
+      "category": "Shooter",
+      "topups": [
+        {
+          "amountGold": 150,
+          "price": 3500000
+        },
+        {
+          "amountGold": 250,
+          "price": 5750000
+        },
+        {
+          "amountGold": 400,
+          "price": 9000000
+        },
+        {
+          "amountGold": 600,
+          "price": 12000000
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "mobile-legends",
+      "imageSrc": "/assets/img/Thumbnail-3.png",
+      "title": "Mobile Legends",
+      "platform": "Mobile",
+      "description": "A team-based multiplayer online battle arena game.",
+      "category": "MOBA",
+      "topups": [
+        {
+          "amountGold": 125,
+          "price": 2250000
+        },
+        {
+          "amountGold": 250,
+          "price": 4500000
+        },
+        {
+          "amountGold": 375,
+          "price": 6750000
+        },
+        {
+          "amountGold": 500,
+          "price": 9000000
+        }
+      ]
+    }
+  ]
+}

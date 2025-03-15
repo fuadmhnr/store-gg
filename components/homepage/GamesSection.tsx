@@ -1,43 +1,20 @@
+import { Game } from "@/lib/types";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export function GamesSection() {
-  const games = [
-    {
-      id: 1,
-      slug: "super-mechs",
-      imageSrc: "/assets/img/Thumbnail-1.png",
-      title: "Super Mechs",
-      platform: "Mobile",
-    },
-    {
-      id: 2,
-      slug: "call-of-duty-modern",
-      imageSrc: "/assets/img/Thumbnail-2.png",
-      title: "Call of Duty: Modern",
-      platform: "Mobile",
-    },
-    {
-      id: 3,
-      slug: "mobile-legends",
-      imageSrc: "/assets/img/Thumbnail-3.png",
-      title: "Mobile Legends",
-      platform: "Mobile",
-    },
-    {
-      id: 4,
-      slug: "clash-of-clans",
-      imageSrc: "/assets/img/Thumbnail-4.png",
-      title: "Clash of Clans",
-      platform: "Mobile",
-    },
-    {
-      id: 5,
-      slug: "supercell",
-      imageSrc: "/assets/img/Thumbnail-5.png",
-      title: "Supercell",
-      platform: "Mobile",
-    },
-  ];
+  const [games, setGames] = useState<Game[]>([]);
+
+  // Ambil data games dari API
+  useEffect(() => {
+    const fetchGames = async () => {
+      const response = await fetch("http://localhost:8000/games");
+      const data = await response.json();
+      setGames(data);
+    };
+
+    fetchGames();
+  }, []);
 
   return (
     <section className="featured-game pt-50 pb-50">

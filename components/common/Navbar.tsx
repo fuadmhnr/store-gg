@@ -64,7 +64,7 @@ export default function Navbar() {
                   className={getLinkClass("/")}
                   passHref
                   aria-current="page"
-                  href="#"
+                  href="/"
                 >
                   Home
                 </Link>
