@@ -1,0 +1,5 @@
+export * from './HeroSection'
+export * from './GamesSection'
+export * from './FeaturedSection'
+export * from './ReachedSection'
+export * from './UserStorySection'
