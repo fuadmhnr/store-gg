@@ -1,5 +1,7 @@
 "use client";
 
+import Footer from "@/components/common/Footer";
+import Navbar from "@/components/common/Navbar";
 import {
   FeaturedSection,
   GamesSection,
@@ -19,11 +21,13 @@ export default function Home() {
 
   return (
     <>
+      <Navbar />
       <HeroSection />
       <FeaturedSection />
       <GamesSection />
       <ReachedSection />
       <UserStorySection />
+      <Footer />
     </>
   );
 }

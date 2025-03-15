@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import "../../../styles/pages/detail.css";
-import "../../../styles/pages/homepage.css";
+import "../../../../styles/pages/detail.css";
+import "../../../../styles/pages/homepage.css";
 import React, { useEffect, useState } from "react";
 import { Game } from "@/lib/types";
 import { formatPrice } from "@/lib/utils";
@@ -262,7 +262,7 @@ export default function GameDetail({
               </div>
               <div className="d-sm-block d-flex flex-column w-100">
                 <Link
-                  href="./checkout.html"
+                  href="/checkout"
                   type="submit"
                   className="btn btn-submit rounded-pill fw-medium text-white border-0 text-lg"
                 >
