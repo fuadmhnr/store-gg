@@ -1,5 +1,10 @@
 import Link from "next/link";
 import "../../../styles/pages/sign-up.css";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sign-up | Store GG",
+};
 
 export default function SignUp() {
   return (
@@ -93,15 +98,13 @@ export default function SignUp() {
             />
           </div>
           <div className="button-group d-flex flex-column mx-auto pt-50">
-            <a
+            <Link
               className="btn btn-sign-up fw-medium text-lg text-white rounded-pill mb-16"
-              href="../src/sign-up-photo.html"
+              href="/sign-up/photo"
               role="button"
             >
               Continue
-            </a>
-            {/* <button type="submit" class="btn btn-sign-up fw-medium text-lg text-white rounded-pill mb-16"
-                  role="button">Continue</button> */}
+            </Link>
             <Link
               className="btn btn-sign-in fw-medium text-lg color-palette-1 rounded-pill"
               href="/sign-in"

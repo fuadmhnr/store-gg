@@ -1,3 +1,9 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sign-up Photo | Store GG",
+};
+
 export default function SignupPhoto() {
   return (
     <section className="sign-up-photo mx-auto pt-lg-227 pb-lg-227 pt-130 pb-50">
@@ -80,7 +86,7 @@ export default function SignupPhoto() {
             <div className="button-group d-flex flex-column mx-auto">
               <a
                 className="btn btn-create fw-medium text-lg text-white rounded-pill mb-16"
-                href="./sign-up-photo-success.html"
+                href="/sign-up/photo/success"
                 role="button"
               >
                 Create My Account

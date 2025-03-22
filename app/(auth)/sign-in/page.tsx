@@ -4,7 +4,7 @@ import Link from "next/link";
 import "../../../styles/pages/sign-in.css";
 
 export const metadata: Metadata = {
-  title: "Login | Store GG",
+  title: "Sign-in | Store GG",
 };
 
 export default function SignIn() {
