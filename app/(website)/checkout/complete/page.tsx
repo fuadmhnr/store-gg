@@ -1,4 +1,4 @@
-import "../../../../styles/pages/complete-checkout.css";
+import "@/styles/pages/complete-checkout.css";
 
 export default function CompleteCheckout() {
   return (

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import "../../../styles/pages/checkout.css";
+import "@/styles/pages/checkout.css";
 
 export default function CheckoutPage() {
   return (

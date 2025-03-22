@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import "../../../../styles/pages/detail.css";
-import "../../../../styles/pages/homepage.css";
+import "@/styles/pages/detail.css";
+import "@/styles/pages/homepage.css";
 import React, { useEffect, useState } from "react";
 import { Game } from "@/lib/types";
 import { formatPrice } from "@/lib/utils";

@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import "../../../styles/pages/sign-in.css";
+import "@/styles/pages/sign-in.css";
 
 export const metadata: Metadata = {
   title: "Sign-in | Store GG",

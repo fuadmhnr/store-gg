@@ -1,5 +1,5 @@
 import Link from "next/link";
-import "../../../styles/pages/sign-up.css";
+import "@/styles/pages/sign-up.css";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
