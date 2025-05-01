@@ -1,4 +1,13 @@
+"use client";
+
+import { usePathname } from "next/navigation";
+import Link from "next/link";
+
 export default function Sidebar() {
+  const pathname = usePathname();
+
+  const isActive = (path: string) => pathname === path;
+
   return (
     <section className="sidebar">
       <div className="content pt-50 pb-30 ps-30">
@@ -13,7 +22,7 @@ export default function Sidebar() {
           <p className="color-palette-2 m-0">shayna@anne.com</p>
         </div>
         <div className="menus">
-          <div className="item active mb-30">
+          <div className={`item mb-30 ${isActive("/member") ? "active" : ""}`}>
             <svg
               className="icon me-3"
               width={25}
@@ -52,12 +61,16 @@ export default function Sidebar() {
               />
             </svg>
             <p className="item-title m-0">
-              <a href="" className="text-lg text-decoration-none">
+              <Link href="/member" className="text-lg text-decoration-none">
                 Overview
-              </a>
+              </Link>
             </p>
           </div>
-          <div className="item mb-30">
+          <div
+            className={`item mb-30 ${
+              isActive("/member/transactions") ? "active" : ""
+            }`}
+          >
             <svg
               className="icon me-3"
               width={25}
@@ -89,12 +102,12 @@ export default function Sidebar() {
               />
             </svg>
             <p className="item-title m-0">
-              <a
-                href="../member/transactions.html"
+              <Link
+                href="/member/transactions"
                 className="text-lg text-decoration-none"
               >
                 Transactions
-              </a>
+              </Link>
             </p>
           </div>
           <div className="item mb-30">
