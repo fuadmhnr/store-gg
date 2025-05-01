@@ -85,5 +85,43 @@
         }
       ]
     }
+  ],
+  "transactions": [
+    {
+      "id": 1,
+      "category": "pending",
+      "image": "/assets/img/overview-1.png",
+      "title": "Mobile Legends: The New Battle 2021",
+      "platform": "Desktop",
+      "item": 200,
+      "price": 290000
+    },
+    {
+      "id": 2,
+      "category": "success",
+      "image": "/assets/img/overview-2.png",
+      "title": "Call of Duty: Modern",
+      "platform": "Desktop",
+      "item": 550,
+      "price": 740000
+    },
+    {
+      "id": 3,
+      "category": "failed",
+      "image": "/assets/img/overview-3.png",
+      "title": "Clash of Clans",
+      "platform": "Mobile",
+      "item": 100,
+      "price": 120000
+    },
+    {
+      "id": 4,
+      "category": "pending",
+      "image": "/assets/img/overview-4.png",
+      "title": "The Royal Game",
+      "platform": "Mobile",
+      "item": 225,
+      "price": 200000
+    }
   ]
 }
